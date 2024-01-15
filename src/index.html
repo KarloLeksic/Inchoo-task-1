@@ -6,13 +6,157 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Magento</title>
 </head>
 <body>
 
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
+<a aria-label="Skip to main content" class="absolute opacity-0 focus:opacity-100" href="#main">Main</a>
+
+<!-- Pre header -->
+<div class="flex items-center justify-center bg-neutral-50">
+    <p class="text-xs text-zinc-800 py-1.5">
+        An initiative by
+        <a href="https://inchoo.net/">Inchoo</a>
+        and
+        <a href="https://www.interactiv4.com/en/">Interactiv4</a>.
+    </p>
+</div>
+
+<header class="bg-top bg-no-repeat text-white bg-400 bg-hero-gradient min-h-[780px]">
+    <nav class="flex items-center justify-between px-3 py-6">
+        <img alt="logo" height="26" src="img/logo.svg" width="190">
+        <img alt="hamburger menu icon" height="16" src="img/hamburger-menu-icon.svg" width="23">
+    </nav>
+
+    <hr style="background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.50) 51.56%, rgba(255, 255, 255, 0.00) 100%); height: 1px; border: 0">
+
+    <section class="relative flex flex-col items-start justify-between px-9">
+        <h1 class="relative mt-6 text-4xl font-bold font-amaranth leading-12 before:content-[''] before:bg-yellow before:absolute before:w-3 before:h-[3px] before:top-[25px] before:-left-6 before:rounded-full">
+            Learn, travel, Magento.
+        </h1>
+        <p class="my-8 leading-6 font-raleway">
+            It’s a simple idea. <br>
+            Two companies agree to swap developers for 2 weeks.
+        </p>
+        <button class="mb-6 rounded-full px-12 py-3 font-bold font-raleway bg-yellow">
+            Sign up!
+        </button>
+        <a class="flex items-center text-white underline font-inter" href="#">
+            <svg class="mr-3" fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                      d="M6.00001 0.656006L11.344 6.00001L6.00001 11.344L5.06267 10.4067L8.78134 6.65667H0.656006V5.34401H8.78134L5.06267 1.59401L6.00001 0.656006Z"
+                      fill="#BABABA"
+                      fill-rule="evenodd"/>
+            </svg>
+            Read how it works
+        </a>
+        <div>
+            <img alt="polariod images" class="absolute right-0 w-[85%]" height="349" src="img/polaroids.png"
+                 width="306">
+        </div>
+    </section>
+</header>
+<main class="mb-16 px-3 font-raleway" id="main">
+    <section>
+        <h2 class="pl-9 text-7 text-gray pr-3 my-8 relative before:content-[''] before:bg-yellow before:absolute before:w-3 before:h-[3px] before:rounded-full before:top-[19px] before:left-2">
+            Experience different work enviroments and travel the world!
+        </h2>
+        <div class="grid grid-cols-2 gap-x-3 gap-y-12">
+            <div class="flex flex-col gap-5">
+                <img alt="different work methodology icon" class="mx-5" height="61" src="img/value-props1-icon.svg"
+                     width="120">
+                <p class="text-center text-sm leading-6">Meet different work methodology</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <img alt="opportunity to build joint knowledge base icon" class="mx-5" height="61"
+                     src="img/value-props2-icon.svg"
+                     width="120">
+                <p class="text-center text-sm leading-6">Opportunity to build joint knowledge base</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <img alt="find new friends and business contacts icon" class="mx-5" height="61"
+                     src="img/value-props3-icon.svg"
+                     width="120">
+                <p class="text-center text-sm leading-6">Find new friends and business contacts</p>
+            </div>
+            <div class="flex flex-col gap-5">
+                <img alt="enrich personal experience icon" class="mx-5" height="61" src="img/value-props4-icon.svg"
+                     width="120">
+                <p class="text-center text-sm leading-6">Enrich personal work experience</p>
+            </div>
+        </div>
+    </section>
+    <section class="my-16">
+        <h2 class="mb-3 text-sm font-bold uppercase text-yellow">
+            Register yours!
+        </h2>
+        <h3 class="text-2xl uppercase font-amaranth mb-6">
+            Companies in the initiative
+        </h3>
+
+        <div class=""> <!-- Za veće ekrane će biti grid ovdje -->
+            <div class="relative rounded-md border-2 border-zinc-100 px-3 py-6">
+                <h4 class="font-semibold mb-6">Inchoo</h4>
+                <svg class="absolute top-6 right-2" fill="none" height="96" viewBox="0 0 96 96" width="96"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <rect fill="white" height="96" width="96"/>
+                    <path clip-rule="evenodd"
+                          d="M33.755 43.688C33.018 43.688 32.4181 44.2979 32.4181 45.047C32.4181 45.7959 33.018 46.4227 33.755 46.4227C34.4923 46.4227 35.1095 45.7959 35.1095 45.047C35.1095 44.2979 34.4923 43.688 33.755 43.688ZM59.4844 46.8761C58.6104 46.8761 57.8215 47.5727 57.479 48.1301V45.447C57.479 44.5764 56.9475 43.9495 55.851 43.9495H55.1314V54.9233C55.1314 55.8819 55.6279 56.4916 56.7079 56.4916H57.4619V51.1608C57.4619 49.5064 58.4046 48.9491 59.1243 48.9491C60.1354 48.9491 60.9584 49.5588 60.9584 51.0915V54.9233C60.9584 55.9341 61.5575 56.4916 62.5183 56.4916H63.2721V50.9868C63.2721 48.3219 61.8666 46.8761 59.4844 46.8761ZM64.7273 51.9622C64.7273 49.1406 66.3212 46.8761 69.3037 46.8761C72.0796 46.8761 73.6737 49.1406 73.6737 51.6316C73.6737 54.4531 72.0796 56.7008 69.0977 56.7008C66.3212 56.7008 64.7273 54.4531 64.7273 51.9622ZM74.9239 52.0623C74.9239 49.2408 76.5181 46.9761 79.501 46.9761C82.2775 46.9761 83.8717 49.2408 83.8717 51.7317C83.8717 54.5533 82.2775 56.8009 79.2944 56.8009C76.5181 56.8009 74.9239 54.5533 74.9239 52.0623ZM51.4895 54.5396C49.7131 54.5396 48.9137 53.3724 48.9137 51.6647C48.9137 50.2714 50.1361 49.2051 51.4333 49.1736L51.9657 49.1518C53.7114 49.1003 53.5451 47.097 53.5451 47.097L51.9131 47.0312C48.1533 47.0312 46.5142 49.3308 46.5142 52.0133C46.5142 54.6962 48.6159 56.6992 50.9344 56.6992C54.1096 56.6992 53.8373 54.3897 53.8373 54.3897C53.8373 54.3897 52.3491 54.5396 51.4895 54.5396ZM79.501 54.7106C77.975 54.7106 77.3071 53.5955 77.3071 51.7317C77.3071 50.1811 77.975 49.0667 79.2944 49.0667C80.8037 49.0667 81.4888 50.1811 81.4888 52.0623C81.4888 53.5955 80.8375 54.7106 79.501 54.7106ZM69.3037 54.6105C67.7781 54.6105 67.1094 53.4954 67.1094 51.6316C67.1094 50.0809 67.7781 48.9665 69.0977 48.9665C70.6061 48.9665 71.2922 50.0809 71.2922 51.9622C71.2922 53.4954 70.6404 54.6105 69.3037 54.6105ZM39.0891 48.1607C39.7527 47.4236 40.5224 46.8761 41.3249 46.8761C43.7551 46.8761 45.1125 48.3566 45.1125 51.0214V56.4916H44.4958C43.4675 56.4916 42.8158 55.8298 42.8158 54.959V51.2308C42.8158 49.6451 42.1475 48.9491 40.9646 48.9491C39.97 48.9491 39.2676 49.8262 39.2676 51.4088V56.4916H38.548C37.9795 56.4916 37.5029 56.2495 37.227 55.8311C37.0617 55.5863 36.9715 55.2877 36.9715 54.959V47.2855H37.6389C38.392 47.2855 38.8636 47.6517 39.0891 48.1607ZM32.6673 47.2855H33.3347C34.4315 47.2855 34.9439 48.0543 34.9439 48.9255L34.9461 56.4916H34.244C33.3416 56.4916 32.6673 55.8819 32.6673 54.9233V47.2855Z"
+                          fill="#343433"
+                          fill-rule="evenodd"/>
+                    <path d="M17.0949 43.688C16.3124 43.688 15.6753 44.3277 15.6753 45.1134C15.6753 45.899 16.3124 46.5564 17.0949 46.5564C17.8783 46.5564 18.5338 45.899 18.5338 45.1134C18.5338 44.3277 17.8783 43.688 17.0949 43.688"
+                          fill="#79AD36"/>
+                    <path clip-rule="evenodd"
+                          d="M12 40H23.8539C26.4081 40 28.3345 41.9177 28.3345 44.4609V56.3912H16.4813C13.8843 56.3912 12 54.5151 12 51.9307V40ZM20.4507 46.9181L26.4416 51.5954V44.4609C26.4416 43.2271 25.6319 41.8995 23.8539 41.8995H13.8926V51.9307C13.8926 53.1117 14.5704 54.4916 16.4813 54.4916H23.9608L18.8771 48.5677C18.7303 48.3739 18.6429 48.1315 18.6429 47.8693C18.6429 47.231 19.1588 46.7131 19.795 46.7131C20.0383 46.7131 20.2646 46.7887 20.4507 46.9181Z"
+                          fill="#79AD36"
+                          fill-rule="evenodd"/>
+                </svg>
+                <div class="flex items-center">
+                    <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M15.3942 4.94036C15.7847 5.88364 16 6.91782 16 8C16 9.08218 15.7847 10.1164 15.3935 11.0604C14.9884 12.04 14.3935 12.9207 13.6567 13.6575C12.92 14.3942 12.0393 14.9884 11.0596 15.3942C10.1164 15.7847 9.08218 16 8 16C6.91782 16 5.88364 15.7847 4.93964 15.3935C3.96 14.9884 3.07927 14.3935 2.34255 13.6567C1.60582 12.92 1.01164 12.0393 0.605818 11.0596C0.215273 10.1164 0 9.08218 0 8C0 6.91782 0.215273 5.88364 0.605818 4.94036C1.01164 3.96073 1.60655 3.08073 2.34327 2.34327C3.08 1.60582 3.96073 1.01164 4.94036 0.605818C5.88364 0.215273 6.91782 0 8 0C9.08218 0 10.1164 0.215273 11.0604 0.606545C12.04 1.01164 12.9207 1.60655 13.6575 2.34327C14.3942 3.08 14.9884 3.96073 15.3942 4.94036ZM14.0502 10.5033C14.3687 9.73309 14.5455 8.888 14.5455 8C14.5455 7.112 14.3687 6.26691 14.0502 5.49673C13.7185 4.69673 13.2327 3.976 12.6284 3.37164C12.0247 2.76727 11.304 2.28145 10.5033 1.94982C9.73309 1.63127 8.888 1.45455 8 1.45455C7.112 1.45455 6.26691 1.63127 5.49673 1.94982C4.69673 2.28145 3.976 2.768 3.37164 3.37164C2.76727 3.97527 2.28145 4.696 1.94982 5.49673C1.63127 6.26691 1.45455 7.112 1.45455 8C1.45455 8.888 1.63127 9.73309 1.94982 10.5033C2.28145 11.3033 2.76727 12.024 3.37164 12.6284C3.97527 13.2327 4.696 13.7185 5.49673 14.0502C6.26691 14.3687 7.112 14.5455 8 14.5455C8.888 14.5455 9.73309 14.3687 10.5033 14.0502C11.3033 13.7185 12.024 13.232 12.6284 12.6284C13.2327 12.0247 13.7185 11.304 14.0502 10.5033ZM11.7738 5.14618C11.8218 5.00364 11.8262 4.84218 11.7738 4.68655C11.6465 4.30545 11.2349 4.09964 10.8538 4.22691L6.22836 5.76873C6.01745 5.84 5.84364 6.00364 5.76873 6.22836L4.22691 10.8538C4.17891 10.9964 4.17455 11.1578 4.22691 11.3135C4.35418 11.6945 4.76582 11.9004 5.14691 11.7731L9.77236 10.2313C9.98327 10.16 10.1571 9.99636 10.232 9.77164L11.7738 5.14618ZM8.96655 8.96655L9.93382 6.06618L7.03273 7.03345L6.06618 9.93382L8.96655 8.96655Z"
+                              fill="#BABABA"
+                              fill-rule="evenodd"/>
+                    </svg>
+                    <a class="ml-2 text-black" href="https://inchoo.net">inchoo.net</a>
+                </div>
+                <div class="flex items-center">
+                    <svg fill="none" height="16" viewBox="0 0 14 16" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M14 6.66687C14 5.76484 13.8117 4.90348 13.4694 4.11746C13.1145 3.30143 12.5944 2.56741 11.9497 1.95273C11.305 1.33871 10.5343 0.843359 9.6768 0.505349C8.8515 0.179339 7.9471 0 7 0C6.0529 0 5.1485 0.179339 4.3232 0.505349C3.4657 0.843359 2.695 1.33871 2.0503 1.95273C1.4056 2.56674 0.8855 3.30077 0.5306 4.11746C0.1883 4.90348 0 5.76484 0 6.66687C0 7.04621 0.0371 7.41889 0.105 7.78423C0.2968 8.81626 0.7343 9.78696 1.2824 10.6643C1.8837 11.6263 2.6285 12.4937 3.3607 13.2277C3.9746 13.8431 4.5857 14.3711 5.1079 14.7898C5.4775 15.0858 5.8037 15.3285 6.0571 15.5091C6.2125 15.6205 6.3413 15.7085 6.4351 15.7718C6.545 15.8458 6.6122 15.8885 6.6122 15.8885C6.8439 16.0331 7.1477 16.0411 7.3885 15.8885C7.3885 15.8885 7.4564 15.8451 7.5656 15.7718C7.6594 15.7085 7.7875 15.6205 7.9436 15.5091C8.197 15.3285 8.5232 15.0858 8.8928 14.7898C9.415 14.3711 10.0261 13.8431 10.64 13.2277C11.3722 12.4937 12.117 11.6263 12.7183 10.6643C13.2664 9.78696 13.7039 8.81626 13.8957 7.78423C13.9629 7.41889 14 7.04621 14 6.66687V6.66687ZM12.6 6.66687C12.6 6.96288 12.5713 7.25822 12.5167 7.55223C12.362 8.38558 12.0008 9.20428 11.5143 9.98297C10.9809 10.8363 10.3075 11.625 9.6243 12.3097C9.0538 12.8817 8.4819 13.3757 7.9905 13.7697C7.6433 14.0478 7.3374 14.2751 7.1029 14.4431C7.0665 14.4691 7.0322 14.4931 7 14.5164C6.9671 14.4938 6.9328 14.4691 6.8971 14.4431C6.6619 14.2751 6.356 14.0478 6.0095 13.7697C5.5181 13.3757 4.9469 12.8817 4.3757 12.3097C3.6925 11.625 3.0191 10.8363 2.4857 9.98297C1.9992 9.20428 1.638 8.38558 1.4833 7.55223C1.4287 7.25822 1.4 6.96288 1.4 6.66687C1.4 5.94351 1.5512 5.25482 1.8235 4.62747C2.1077 3.97545 2.5235 3.38743 3.0401 2.89542C3.5567 2.40341 4.1741 2.00673 4.8587 1.73672C5.5174 1.47738 6.2405 1.33337 7 1.33337C7.7595 1.33337 8.4826 1.47738 9.1413 1.73672C9.8259 2.00673 10.4426 2.40274 10.9599 2.89542C11.4772 3.3881 11.893 3.97545 12.1765 4.62747C12.4488 5.25482 12.6 5.94351 12.6 6.66687V6.66687ZM9.8 6.66687C9.8 6.30686 9.7244 5.96218 9.5879 5.64684C9.4458 5.32016 9.2379 5.02682 8.9803 4.78148C8.7227 4.53614 8.414 4.33746 8.071 4.20213C7.7399 4.07212 7.378 4.00012 7 4.00012C6.622 4.00012 6.2601 4.07212 5.929 4.20213C5.586 4.33746 5.278 4.53547 5.0204 4.78081C4.7628 5.02615 4.5542 5.32016 4.4121 5.64684C4.2756 5.96218 4.2 6.30686 4.2 6.66687C4.2 7.02688 4.2756 7.37155 4.4121 7.6869C4.5542 8.01357 4.7621 8.30692 5.0197 8.55226C5.2773 8.7976 5.5853 8.9956 5.9283 9.13094C6.2601 9.26161 6.622 9.33361 7 9.33361C7.378 9.33361 7.7399 9.26161 8.071 9.13161C8.414 8.99627 8.722 8.79826 8.9796 8.55292C9.2372 8.30758 9.4451 8.01424 9.5872 7.68756C9.7244 7.37155 9.8 7.02688 9.8 6.66687V6.66687ZM8.4 6.66687C8.4 6.84887 8.3622 7.02021 8.2943 7.17688C8.2236 7.33955 8.1193 7.48622 7.9898 7.61023C7.8603 7.73423 7.7056 7.8329 7.5348 7.90024C7.371 7.96424 7.1911 8.00024 7 8.00024C6.8089 8.00024 6.629 7.96424 6.4645 7.89957C6.2937 7.83223 6.1397 7.7329 6.0095 7.60956C5.8793 7.48622 5.7757 7.33889 5.705 7.17622C5.6378 7.02021 5.6 6.84887 5.6 6.66687C5.6 6.48486 5.6378 6.31352 5.7057 6.15685C5.7764 5.99418 5.8807 5.84751 6.0102 5.7235C6.1397 5.5995 6.2944 5.50083 6.4652 5.4335C6.629 5.36949 6.8089 5.33349 7 5.33349C7.1911 5.33349 7.371 5.36949 7.5355 5.43416C7.7063 5.5015 7.8603 5.60083 7.9905 5.72417C8.1207 5.84751 8.2243 5.99485 8.295 6.15752C8.3622 6.31352 8.4 6.48486 8.4 6.66687Z"
+                              fill="#BABABA"
+                              fill-rule="evenodd"/>
+                    </svg>
+                    <p class="ml-2">Osijek, Croatia</p>
+                </div>
+                <p class="mt-6">
+                    Inchoo was founded in 2008 Osijek, Croatia as a full service eCommerce development agency. Our
+                    purpose is to help merchants start and grow their online businesses. We strive to be a merchant’…
+                </p>
+                <hr class="my-6 h-0.5 border-0 bg-[#F4F5F5] rounded-full">
+                <div class="flex justify-center">
+                    <button class="rounded-full px-6 py-3 font-bold border-link text-link border-1">View profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center my-9">
+            <svg xmlns="http://www.w3.org/2000/svg" width="180" height="3" viewBox="0 0 180 3" fill="none">
+                <rect width="36" height="3" rx="1.5" transform="matrix(1 0 0 -1 0 3)" fill="#FFBB00"/>
+                <rect width="36" height="3" rx="1.5" transform="matrix(1 0 0 -1 48 3)" fill="#BABABA"/>
+                <rect width="36" height="3" rx="1.5" transform="matrix(1 0 0 -1 96 3)" fill="#BABABA"/>
+                <rect width="36" height="3" rx="1.5" transform="matrix(1 0 0 -1 144 3)" fill="#BABABA"/>
+            </svg>
+        </div>
+
+        <div class="">
+            <button class="font-bold">View all</button>
+        </div>
+    </section>
+</main>
+
+<footer></footer>
 
 </body>
 </html>
