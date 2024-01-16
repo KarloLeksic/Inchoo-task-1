@@ -998,6 +998,10 @@ article hr{
   background-position: 50% 70%;
 }
 
+.bg-center-top{
+  background-position: center top;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }

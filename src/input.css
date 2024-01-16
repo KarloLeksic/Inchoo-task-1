@@ -9,6 +9,10 @@
         @apply text-link;
     }
 
+    .hero-gradient-bg {
+
+    }
+
     .mobile-menu {
         position: absolute;
         z-index: 1;

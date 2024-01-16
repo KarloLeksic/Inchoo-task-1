@@ -44,6 +44,7 @@ module.exports = {
             },
             backgroundPosition: {
                 'center-70': "50% 70%",
+                'center-top': "center top",
             }
         },
     },
