@@ -9,6 +9,48 @@
         @apply text-link;
     }
 
+    .mobile-menu {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        padding: 24px 12px;
+        background-color: #4B545C;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+    }
+
+    .shown {
+        transform: translateX(0%);
+    }
+
+    .close-btn-wrapper {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 12px;
+        border-left: 1px solid #CCC;
+    }
+
+    .account-menu a {
+        @apply text-tertiary font-bold;
+    }
+
+    .account-menu {
+        margin-bottom: 24px;
+        display: flex;
+    }
+
+    .mobile-menu li {
+        border-bottom: #BABABA 1px solid;
+    }
+
+    ul a {
+        line-height: 40px;
+        color: white;
+    }
+
     .btn-lg {
         @apply rounded-full px-12 font-bold py-2.5 font-raleway;
     }
