@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        overflow-x: hidden;
+    }
+
     a {
         @apply text-link;
     }
@@ -17,13 +21,18 @@
         position: absolute;
         z-index: 1;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
+        max-width: 400px;
         min-height: 100vh;
         padding: 24px 12px;
         background-color: #4B545C;
         transform: translateX(100%);
         transition: transform .3s ease;
+    }
+
+    .nav-open {
+        overflow: hidden;
     }
 
     .shown {
@@ -37,17 +46,39 @@
         border-left: 1px solid #CCC;
     }
 
-    .account-menu a {
+    .account-actions-lg {
+
+    }
+
+    .account-actions a {
         @apply text-tertiary font-bold;
     }
 
-    .account-menu {
+    .account-actions {
         margin-bottom: 24px;
         display: flex;
     }
 
     .mobile-menu li {
         border-bottom: #BABABA 1px solid;
+    }
+
+    @media only screen and (min-width: 500px) {
+
+    }
+
+    #hero-gradient {
+        background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.50) 51.56%, rgba(255, 255, 255, 0.00) 100%);
+        height: 1px;
+        border: 0;
+    }
+
+    @media only screen and (min-width: 640px) {
+        #hero-gradient {
+            background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 54.13%, rgba(255, 255, 255, 0.00) 100%);
+            height: 1px;
+            border: 0;
+        }
     }
 
     ul a {
@@ -72,11 +103,11 @@
     }
 
     .value-prop p {
-        @apply text-center text-sm leading-6;
+        @apply text-center text-sm leading-6 max-w-[300px] sm:text-start;
     }
 
     .value-prop img {
-        @apply mx-5 w-[121px] aspect-prop;
+        @apply mx-5 w-[121px] aspect-prop sm:mx-0;
     }
 
     article.company {
@@ -85,7 +116,7 @@
 
     .city-bg {
         background: linear-gradient(to bottom, transparent 0, transparent 290px, #F4F5F5 290px 100%),
-                    url('img/bg-city.svg');
+        url('img/bg-city.svg');
         background-size: 100%, 720px 290px;
     }
 
@@ -110,7 +141,7 @@
     }
 
     article.experience {
-        @apply my-10;
+        @apply my-10 sm:my-0;
     }
 
     article hr {
@@ -132,7 +163,7 @@
     .organization {
         @apply text-sm text-secondary-10;
     }
-    
+
     .duration {
         @apply mt-3 mb-6 flex items-center text-sm text-secondary-10;
     }

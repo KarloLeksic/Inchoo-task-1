@@ -30,6 +30,9 @@ module.exports = {
             },
             backgroundSize: {
                 350: "350%",
+                220: "220%",
+                s: "1320px 520px",
+                m: "2131px 857px",
             },
             fontFamily: {
                 amaranth: ['Amaranth', 'sans-serif'],
