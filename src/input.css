@@ -8,4 +8,86 @@
     a {
         @apply text-link;
     }
+
+    .btn-lg {
+        @apply rounded-full px-12 font-bold py-2.5 font-raleway;
+    }
+
+    .btn-md {
+        @apply rounded-full px-6 font-bold py-2.5 border-1 border-link text-link;
+    }
+
+    .btn-blue {
+        @apply text-white bg-primary;
+    }
+
+    .value-prop {
+        @apply flex flex-col gap-5;
+    }
+
+    .value-prop p {
+        @apply text-center text-sm leading-6;
+    }
+
+    .value-prop img {
+        @apply mx-5 w-[121px] aspect-prop;
+    }
+
+    article.company {
+        @apply relative rounded-md border-1 border-zinc-200 px-3 py-6 bg-white;
+    }
+
+    .city-bg {
+        background: linear-gradient(to bottom, transparent 0, transparent 290px, #F4F5F5 290px 100%),
+                    url('img/bg-city.svg');
+        background-size: 100%, 720px 290px;
+    }
+
+    .company-name {
+        @apply mb-6 font-semibold;
+    }
+
+    .company-logo {
+        @apply absolute top-6 right-2;
+    }
+
+    .company-details {
+        @apply mb-1 flex items-center;
+    }
+
+    .company-details a, .company-details p {
+        @apply ml-2 text-black;
+    }
+
+    .about-company {
+        @apply mt-6 text-secondary-20;
+    }
+
+    article.experience {
+        @apply my-10;
+    }
+
+    article hr {
+        @apply my-6 h-0.5 border-0 bg-[#F4F5F5] rounded-full;
+    }
+
+    .publication-date {
+        @apply my-3 text-sm text-secondary-10;
+    }
+
+    .article-title {
+        @apply text-2xl font-amaranth text-secondary-20;
+    }
+
+    .article-text {
+        @apply my-6 text-secondary-20;
+    }
+
+    .organization {
+        @apply text-sm text-secondary-10;
+    }
+    
+    .duration {
+        @apply mt-3 mb-6 flex items-center text-sm text-secondary-10;
+    }
 }
