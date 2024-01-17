@@ -5,8 +5,16 @@
 @tailwind utilities;
 
 @layer base {
+    .center-x {
+        @apply flex justify-center;
+    }
+
     body {
         @apply overflow-x-hidden;
+    }
+
+    body.nav-open {
+        @apply overflow-hidden;
     }
 
     a {
@@ -35,17 +43,12 @@
         }
     }
 
-    .nav-open {
-        @apply overflow-hidden;
-    }
-
     .mobile-menu {
         @apply fixed z-10 top-0 right-0 w-full max-w-[400px] min-h-screen px-3 py-6 bg-[#4B545C] translate-x-full transition-transform;
     }
 
     .shown {
         @apply translate-x-0;
-        /*transform: translateX(0);*/
     }
 
     .close-btn-wrapper {
@@ -70,11 +73,11 @@
 
     .world-map-bg {
         background: url('img/plane.svg'),
-        url('img/track.svg'),
-        url('img/world-map.svg');
+                    url('img/track.svg'),
+                    url('img/world-map.svg');
         background-position: right 370px top 220px,
-        center right,
-        center right;
+                            center right,
+                            center right;
         background-repeat: no-repeat;
     }
 

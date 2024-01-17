@@ -446,8 +446,17 @@ video {
   display: none;
 }
 
+.center-x{
+  display: flex;
+  justify-content: center;
+}
+
 body{
   overflow-x: hidden;
+}
+
+body.nav-open{
+  overflow: hidden;
 }
 
 a{
@@ -479,10 +488,6 @@ a{
   }
 }
 
-.nav-open{
-  overflow: hidden;
-}
-
 .mobile-menu{
   position: fixed;
   top: 0px;
@@ -507,7 +512,6 @@ a{
 .shown{
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  /*transform: translateX(0);*/
 }
 
 .close-btn-wrapper{
@@ -1315,11 +1319,11 @@ article hr{
 @media (min-width: 1280px){
   .xl\:world-map-bg {
     background: url('img/plane.svg'),
-        url('img/track.svg'),
-        url('img/world-map.svg');
+                    url('img/track.svg'),
+                    url('img/world-map.svg');
     background-position: right 370px top 220px,
-        center right,
-        center right;
+                            center right,
+                            center right;
     background-repeat: no-repeat;
   }
 }

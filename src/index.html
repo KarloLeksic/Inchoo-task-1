@@ -53,15 +53,15 @@
 
             <div class="hidden xl:block">
                 <ul class="mr-36 flex gap-6">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">EXPERIENCES</a></li>
-                    <li><a href="#">COMPANIES</a></li>
+                    <li><a aria-label="about mage exchange" href="#">ABOUT</a></li>
+                    <li><a aria-label="experiences in mage exchange" href="#">EXPERIENCES</a></li>
+                    <li><a aria-label="initiative companies" href="#">COMPANIES</a></li>
                 </ul>
             </div>
 
             <div class="hidden items-center sm:flex">
-                <a class="font-medium text-white" href="#">Login</a>
-                <a class="mx-6 font-bold text-white btn-lg bg-tertiary" href="#">Register</a>
+                <a class="font-medium text-white" aria-label="login to mage exchange" href="#">Login</a>
+                <a class="mx-6 font-bold text-white btn-lg bg-tertiary" aria-label="register to mage exchange" href="#">Register</a>
                 <div class="w-[1px] h-10 bg-zinc-100 xl:hidden"></div>
             </div>
 
@@ -82,20 +82,23 @@
                     </div>
                 </div>
                 <div class="account-actions">
-                    <a href="#">Sing in</a>
+                    <a href="#" aria-label="sign in to mage exchange">Sing in</a>
                     <div class="mx-3 w-[1px] h-[24px] bg-secondary-10"></div>
-                    <a href="#">Sing up</a>
+                    <a href="#" aria-label="sign up to mage excgange">Sing up</a>
                 </div>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Companies</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><a aria-label="about mage exchange" href="#">About</a></li>
+                        <li><a aria-label="experiences in exchanging developers" href="#">Experiences</a></li>
+                        <li><a aria-label="companies in initiative" href="#">Companies</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
                 <p class="mt-12 mb-7 text-center">
                     Knowledge and expertise exchange initiative by Inchoo and Interaciv4.
                 </p>
-                <div class="flex justify-center">
+                <div class="center-x">
                     <svg fill="none" height="30" viewBox="0 0 204 30" width="204" xmlns="http://www.w3.org/2000/svg">
                         <path clip-rule="evenodd"
                               d="M27.1937 9.55566C26.2724 9.55566 25.5226 10.3091 25.5226 11.2344C25.5226 12.1595 26.2724 12.9338 27.1937 12.9338C28.1153 12.9338 28.8869 12.1595 28.8869 11.2344C28.8869 10.3091 28.1153 9.55566 27.1937 9.55566ZM59.3555 13.4939C58.2629 13.4939 57.2769 14.3545 56.8488 15.043V11.7286C56.8488 10.6531 56.1843 9.87866 54.8137 9.87866H53.9142V23.4345C53.9142 24.6188 54.5348 25.3719 55.8848 25.3719H56.8274V18.7867C56.8274 16.7431 58.0058 16.0547 58.9053 16.0547C60.1693 16.0547 61.198 16.8078 61.198 18.7011V23.4345C61.198 24.6832 61.9469 25.3719 63.1479 25.3719H64.0901V18.5718C64.0901 15.2799 62.3332 13.4939 59.3555 13.4939ZM65.909 19.7767C65.909 16.2913 67.9014 13.4939 71.6295 13.4939C75.0995 13.4939 77.0921 16.2913 77.0921 19.3683C77.0921 22.8538 75.0995 25.6303 71.3721 25.6303C67.9014 25.6303 65.909 22.8538 65.909 19.7767ZM78.6549 19.9005C78.6549 16.415 80.6476 13.6174 84.3762 13.6174C87.8468 13.6174 89.8395 16.415 89.8395 19.492C89.8395 22.9775 87.8468 25.754 84.1179 25.754C80.6476 25.754 78.6549 22.9775 78.6549 19.9005ZM49.3618 22.9606C47.1414 22.9606 46.1421 21.5187 46.1421 19.4092C46.1421 17.6881 47.6701 16.371 49.2916 16.332L49.9571 16.3051C52.1392 16.2415 51.9313 13.7668 51.9313 13.7668L49.8913 13.6855C45.1915 13.6855 43.1427 16.5262 43.1427 19.8398C43.1427 23.1541 45.7698 25.6283 48.6679 25.6283C52.637 25.6283 52.2966 22.7754 52.2966 22.7754C52.2966 22.7754 50.4364 22.9606 49.3618 22.9606ZM84.3762 23.1718C82.4687 23.1718 81.6338 21.7944 81.6338 19.492C81.6338 17.5766 82.4687 16.2 84.1179 16.2C86.0046 16.2 86.861 17.5766 86.861 19.9005C86.861 21.7944 86.0468 23.1718 84.3762 23.1718ZM71.6295 23.0481C69.7225 23.0481 68.8867 21.6707 68.8867 19.3683C68.8867 17.4528 69.7225 16.0762 71.3721 16.0762C73.2576 16.0762 74.1153 17.4528 74.1153 19.7767C74.1153 21.6707 73.3005 23.0481 71.6295 23.0481ZM33.8613 15.0808C34.6908 14.1703 35.653 13.4939 36.656 13.4939C39.6938 13.4939 41.3906 15.3228 41.3906 18.6145V25.3719H40.6197C39.3343 25.3719 38.5197 24.5544 38.5197 23.4787V18.8733C38.5197 16.9145 37.6843 16.0547 36.2057 16.0547C34.9625 16.0547 34.0844 17.1382 34.0844 19.0931V25.3719H33.1849C32.4743 25.3719 31.8786 25.0729 31.5338 24.556C31.3272 24.2535 31.2143 23.8847 31.2143 23.4787V13.9996H32.0485C32.9899 13.9996 33.5795 14.4521 33.8613 15.0808ZM25.834 13.9996H26.6683C28.0394 13.9996 28.6798 14.9494 28.6798 16.0255L28.6826 25.3719H27.805C26.677 25.3719 25.834 24.6188 25.834 23.4345V13.9996Z"
@@ -160,6 +163,7 @@
 
     <hr id="hero-gradient">
 
+    <!-- Hero section -->
     <section>
         <div class="relative flex flex-col items-start justify-between px-9 container-1140 sm:px-24 xl:px-0">
             <h1 class="relative mt-6 text-4xl font-bold font-amaranth leading-12 before:content-[''] before:bg-yellow before:absolute before:w-3 before:h-[3px] before:top-[25px] sm:mt-12 before:-left-6 before:rounded-full sm:text-7xl sm:before:w-16 sm:before:-left-[80px] sm:before:top-[35px] xl:mt-24">
@@ -172,7 +176,7 @@
             <button class="mb-6 btn-lg bg-yellow">
                 Sign up!
             </button>
-            <a class="flex items-center text-white underline font-inter mb-[335px] md:mb-[470px]" href="#">
+            <a class="flex items-center text-white underline font-inter mb-[335px] md:mb-[470px]" aria-label="read how two companies agreed to exchange programmers for 2 weeks" href="#">
                 <svg class="mr-3" fill="none" height="12" viewBox="0 0 12 12" width="12"
                      xmlns="http://www.w3.org/2000/svg">
                     <path clip-rule="evenodd"
@@ -339,8 +343,8 @@
                                 strive to be a merchant’…
                             </p>
                             <hr>
-                            <div class="flex justify-center">
-                                <button class="btn-md">View profile</button>
+                            <div class="center-x">
+                                <a href="#" class="btn-md" aria-label="view the profile of the company inchoo">View profile</a>
                             </div>
                         </article>
 
@@ -414,8 +418,8 @@
                                 of your needs. We will analyze yo …
                             </p>
                             <hr>
-                            <div class="flex justify-center">
-                                <button class="btn-md">View profile</button>
+                            <div class="center-x">
+                                <a href="#" class="btn-md" aria-label="view the profile of the company Interactiv4">View profile</a>
                             </div>
                         </article>
 
@@ -466,8 +470,8 @@
                                 clients on every level of the project lifecycle.
                             </p>
                             <hr>
-                            <div class="flex justify-center">
-                                <button class="btn-md">View profile</button>
+                            <div class="center-x">
+                                <a href="#" class="btn-md" aria-label="view the profile of the company Atwix">View profile</a>
                             </div>
                         </article>
 
@@ -506,13 +510,13 @@
                                 clients on every level of the project lifecycle.
                             </p>
                             <hr>
-                            <div class="flex justify-center">
-                                <button class="btn-md">View profile</button>
+                            <div class="center-x">
+                                <a href="#" class="btn-md" aria-label="view the profile of the company JH">View profile</a>
                             </div>
                         </article>
                     </div>
 
-                    <div class="my-9 flex justify-center sm:hidden">
+                    <div class="my-9 center-x sm:hidden">
                         <svg fill="none" height="3" viewBox="0 0 180 3" width="180" xmlns="http://www.w3.org/2000/svg">
                             <rect fill="#FFBB00" height="3" rx="1.5" transform="matrix(1 0 0 -1 0 3)" width="36"/>
                             <rect fill="#BABABA" height="3" rx="1.5" transform="matrix(1 0 0 -1 48 3)" width="36"/>
@@ -521,8 +525,8 @@
                         </svg>
                     </div>
 
-                    <div class="mb-12 flex justify-center">
-                        <button class="btn-lg btn-blue sm:mt-12">View all</button>
+                    <div class="mb-12 center-x">
+                        <a href="#" class="btn-lg btn-blue sm:mt-12" aria-label="view all COMPANIES IN THE INITIATIVE">View all</a>
                     </div>
                 </div>
             </div>
@@ -541,7 +545,7 @@
                         <p class="my-6 text-center max-w-[267px]">
                             Travel the world and exchange your knowledge and expertise!
                         </p>
-                        <button class="btn-lg btn-blue">Sign up!</button>
+                        <a href="#" class="btn-lg btn-blue" aria-label="sign up if you are ready for traveling the world and exchange your knowledge and expertise">Sign up!</a>
                         <svg class="mt-12 mb-14" fill="none" height="2" viewBox="0 0 267 2" width="267"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 1.5H267" stroke="#FFBB00" stroke-width="2"/>
@@ -589,7 +593,7 @@
                             </svg>
                             <p>Feb 01, 2019 - Feb 29, 2019</p>
                         </div>
-                        <button class="btn-md">Read more</button>
+                        <a href="#" aria-label="read more about first impressions of language and culture in New Caledonia" class="btn-md">Read more</a>
                     </div>
                 </article>
 
@@ -619,7 +623,7 @@
                             </svg>
                             <p>Feb 01, 2019 - Feb 29, 2019</p>
                         </div>
-                        <button class="btn-md">Read more</button>
+                        <a href="#" aria-label="read more about Week 10 Down Under!" class="btn-md">Read more</a>
                     </div>
                 </article>
 
@@ -650,19 +654,19 @@
                             </svg>
                             <p>Feb 01, 2019 - Feb 29, 2019</p>
                         </div>
-                        <button class="btn-md">Read more</button>
+                        <a href="#" aria-label="read more about Dream Interpretation Common Symbols And Their Meanings" class="btn-md">Read more</a>
                     </div>
                 </article>
             </div>
-            <div class="mb-14 flex justify-center sm:mt-12 sm:mb-24">
-                <button class="btn-lg btn-blue">View all</button>
+            <div class="mb-14 center-x sm:mt-12 sm:mb-24">
+                <a href="#" aria-label="read all EXCHANGE STORIES" class="btn-lg btn-blue">View all</a>
             </div>
         </div>
     </section>
 </main>
 
 <footer class="text-white bg-secondary-20">
-    <div class="flex justify-center py-8 container-1140 xl:justify-between">
+    <div class="center-x py-8 container-1140 xl:justify-between">
         <div class="flex flex-col items-center gap-y-6 xl:items-start">
             <img alt="logo" class="lg:w-[315px]" src="img/logo.svg">
             <div class="flex flex-col items-center gap-y-6 lg:flex-row">
@@ -721,7 +725,7 @@
                 </svg>
             </div>
         </div>
-        <div class="hidden text-xl xl:block xl:pt-1">
+        <nav class="hidden text-xl xl:block xl:pt-1">
             <ul class="flex items-center gap-6">
                 <li><a href="#">ABOUT</a></li>
                 <li class="h-4 bg-white w-0.5"></li>
@@ -731,7 +735,7 @@
                 <li class="h-4 bg-white w-0.5"></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 </footer>
 
