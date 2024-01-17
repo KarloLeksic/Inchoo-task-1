@@ -27,6 +27,7 @@ module.exports = {
                 'hero-gradient': "url('img/header-bg.svg')",
                 'waves': "url('img/waves.svg')",
                 'city': "url('img/bg-city.svg')",
+                'world-map': "url('img/world-map.svg')",
             },
             backgroundSize: {
                 350: "350%",
@@ -49,6 +50,10 @@ module.exports = {
             backgroundPosition: {
                 'center-70': "50% 70%",
                 'center-top': "center top",
+            },
+            gridTemplateColumns: {
+              300: "repeat(2, minmax(0, 300px))",
+              364: "repeat(2, minmax(0, 364px))",
             }
         },
     },
