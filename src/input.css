@@ -51,7 +51,7 @@
     }
 
     .account-actions a {
-        @apply text-tertiary font-bold;
+        @apply font-bold text-tertiary;
     }
 
     .account-actions {
@@ -99,7 +99,7 @@
     }
 
     .value-prop {
-        @apply flex flex-col gap-5;
+        @apply flex flex-col items-center gap-5 sm:items-start;
     }
 
     .value-prop p {
@@ -111,13 +111,22 @@
     }
 
     article.company {
-        @apply relative rounded-md border-1 border-zinc-200 px-3 py-6 bg-white;
+        @apply relative rounded-md border-zinc-200 bg-white px-3 py-6 border-1;
     }
 
     .city-bg {
         background: linear-gradient(to bottom, transparent 0, transparent 290px, #F4F5F5 290px 100%),
         url('img/bg-city.svg');
         background-size: 100%, 720px 290px;
+    }
+
+    @media only screen and (min-width: 640px) {
+        .city-bg {
+            background: linear-gradient(to bottom, transparent 0, transparent 772px, #F4F5F5 772px 100%),
+            url('img/bg-city.svg');
+            background-size: 100%, 1920px 772px;
+            background-position: center, 40% 0%;
+        }
     }
 
     .company-name {
@@ -141,7 +150,7 @@
     }
 
     article.experience {
-        @apply my-10 sm:my-0;
+        @apply mx-auto my-10 max-w-[336px] sm:my-0;
     }
 
     article hr {

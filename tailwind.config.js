@@ -44,6 +44,7 @@ module.exports = {
             },
             minHeight: {
                 106: "27rem",
+                128: "32rem",
             },
             backgroundPosition: {
                 'center-70': "50% 70%",

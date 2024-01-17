@@ -555,7 +555,14 @@ ul a {
 .value-prop{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.25rem;
+}
+
+@media (min-width: 640px){
+  .value-prop{
+    align-items: flex-start;
+  }
 }
 
 .value-prop p{
@@ -605,6 +612,15 @@ article.company{
   background-size: 100%, 720px 290px;
 }
 
+@media only screen and (min-width: 640px) {
+  .city-bg {
+    background: linear-gradient(to bottom, transparent 0, transparent 772px, #F4F5F5 772px 100%),
+            url('img/bg-city.svg');
+    background-size: 100%, 1920px 772px;
+    background-position: center, 40% 0%;
+  }
+}
+
 .company-name{
   margin-bottom: 1.5rem;
   font-weight: 600;
@@ -635,8 +651,11 @@ article.company{
 }
 
 article.experience{
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  max-width: 336px;
 }
 
 @media (min-width: 640px){
@@ -844,6 +863,10 @@ article hr{
   right: -2.25rem;
 }
 
+.-top-\[10px\]{
+  top: -10px;
+}
+
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -947,8 +970,8 @@ article hr{
   height: 42px;
 }
 
-.min-h-106{
-  min-height: 27rem;
+.min-h-80{
+  min-height: 20rem;
 }
 
 .min-h-\[750px\]{
@@ -963,8 +986,8 @@ article hr{
   width: 1px;
 }
 
-.w-\[300px\]{
-  width: 300px;
+.w-\[360px\]{
+  width: 360px;
 }
 
 .max-w-\[336px\]{
@@ -1112,10 +1135,6 @@ article hr{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.pb-14{
-  padding-bottom: 3.5rem;
 }
 
 .pl-9{
@@ -1303,6 +1322,10 @@ article hr{
     margin-bottom: 6rem;
   }
 
+  .sm\:mb-24{
+    margin-bottom: 6rem;
+  }
+
   .sm\:mt-12{
     margin-top: 3rem;
   }
@@ -1327,6 +1350,10 @@ article hr{
     height: 2.25rem;
   }
 
+  .sm\:min-h-128{
+    min-height: 32rem;
+  }
+
   .sm\:min-h-\[900px\]{
     min-height: 900px;
   }
@@ -1337,10 +1364,6 @@ article hr{
 
   .sm\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .sm\:w-\[100\%\]{
-    width: 100%;
   }
 
   .sm\:w-full{
@@ -1362,6 +1385,10 @@ article hr{
 
   .sm\:bg-m{
     background-size: 2131px 857px;
+  }
+
+  .sm\:bg-right{
+    background-position: right;
   }
 
   .sm\:px-24{
