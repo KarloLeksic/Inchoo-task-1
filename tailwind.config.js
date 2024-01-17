@@ -6,6 +6,7 @@ module.exports = {
             colors: {
                 primary: "#09A8D6",
                 secondary: {
+                    0: "#CCCCCC",
                     10: "#BABABA",
                     20: "#333333",
                 },
@@ -27,7 +28,6 @@ module.exports = {
                 'hero-gradient': "url('img/header-bg.svg')",
                 'waves': "url('img/waves.svg')",
                 'city': "url('img/bg-city.svg')",
-                'world-map': "url('img/world-map.svg')",
             },
             backgroundSize: {
                 350: "350%",

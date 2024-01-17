@@ -446,7 +446,7 @@ video {
   display: none;
 }
 
-body {
+body{
   overflow-x: hidden;
 }
 
@@ -455,53 +455,10 @@ a{
   color: rgb(9 168 214 / var(--tw-text-opacity));
 }
 
-.container-1140 {
+.container-1140{
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1140px;
-  margin: 0 auto;
-}
-
-.mobile-menu {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  width: 100%;
-  max-width: 400px;
-  min-height: 100vh;
-  padding: 24px 12px;
-  background-color: #4B545C;
-  transform: translateX(100%);
-  transition: transform .3s ease;
-}
-
-.nav-open {
-  overflow: hidden;
-}
-
-.shown {
-  transform: translateX(0%);
-}
-
-.close-btn-wrapper {
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 12px;
-  border-left: 1px solid #CCC;
-}
-
-.account-actions a{
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(255 187 0 / var(--tw-text-opacity));
-}
-
-.account-actions {
-  margin-bottom: 24px;
-  display: flex;
-}
-
-.mobile-menu li {
-  border-bottom: #BABABA 1px solid;
 }
 
 #hero-gradient {
@@ -522,9 +479,66 @@ a{
   }
 }
 
-ul a {
-  line-height: 40px;
-  color: white;
+.nav-open{
+  overflow: hidden;
+}
+
+.mobile-menu{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 84 92 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.shown{
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  /*transform: translateX(0);*/
+}
+
+.close-btn-wrapper{
+  border-left-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(204 204 204 / var(--tw-border-opacity));
+  padding: 1rem;
+  padding-right: 0px;
+}
+
+.account-actions a{
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 187 0 / var(--tw-text-opacity));
+}
+
+.account-actions{
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.mobile-menu li{
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(186 186 186 / var(--tw-border-opacity));
+}
+
+ul a{
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .btn-lg{
@@ -1007,28 +1021,32 @@ article hr{
   display: none;
 }
 
-.h-\[18px\]{
-  height: 18px;
+.h-10{
+  height: 2.5rem;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .h-\[24px\]{
   height: 24px;
 }
 
-.h-\[42px\]{
-  height: 42px;
-}
-
 .min-h-80{
   min-height: 20rem;
 }
 
-.w-\[1px\]{
-  width: 1px;
+.w-0{
+  width: 0px;
 }
 
-.w-\[2px\]{
-  width: 2px;
+.w-0\.5{
+  width: 0.125rem;
+}
+
+.w-\[1px\]{
+  width: 1px;
 }
 
 .max-w-\[267px\]{
@@ -1098,19 +1116,14 @@ article hr{
   row-gap: 1.5rem;
 }
 
-.bg-\[\#BABABA\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(186 186 186 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#EEE\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-50{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-10{
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 186 186 / var(--tw-bg-opacity));
 }
 
 .bg-secondary-20{
@@ -1131,6 +1144,11 @@ article hr{
 .bg-yellow{
   --tw-bg-opacity: 1;
   background-color: rgb(255 188 0 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
 .bg-hero-gradient{
@@ -1296,13 +1314,12 @@ article hr{
 
 @media (min-width: 1280px){
   .xl\:world-map-bg {
-    /*@apply bg-world-map bg-no-repeat bg-right;*/
     background: url('img/plane.svg'),
-                    url('img/track.svg'),
-                    url('img/world-map.svg');
+        url('img/track.svg'),
+        url('img/world-map.svg');
     background-position: right 370px top 220px,
-                            center right,
-                            center right;
+        center right,
+        center right;
     background-repeat: no-repeat;
   }
 }
@@ -1402,10 +1419,6 @@ article hr{
 
   .sm\:min-h-128{
     min-height: 32rem;
-  }
-
-  .sm\:w-\[255px\]{
-    width: 255px;
   }
 
   .sm\:w-\[400px\]{
