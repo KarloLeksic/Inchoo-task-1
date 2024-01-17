@@ -157,7 +157,7 @@
     }
 
     article hr {
-        @apply my-6 h-0.5 border-0 bg-[#F4F5F5] rounded-full;
+        @apply my-6 h-0.5 border-0 bg-zinc-100 rounded-full;
     }
 
     .publication-date {

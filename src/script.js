@@ -3,8 +3,6 @@ const openMenuBtn = document.querySelector('#open-menu-icon');
 const closeMenuBtn = document.querySelector('#close-menu-icon');
 const bodyEl = document.querySelector('body');
 
-console.log(bodyEl)
-
 // Open mobile menu
 openMenuBtn.addEventListener('click', () => {
     mobileMenuEl.classList.add('shown');
