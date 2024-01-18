@@ -6,7 +6,10 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="output.css" rel="stylesheet">
-    <title>Magento</title>
+
+    <link as="image" rel="preload" href="img/polaroids.webp">
+
+    <title>Learn, Travel, Magento!</title>
 </head>
 <body>
 
@@ -188,17 +191,23 @@
                 Read how it works
             </a>
         </div>
-        <img alt="polariod images"
-             class="absolute right-0 bottom-0 sm:w-[400px] md:w-[513px] xl:w-[620px] 2xl:w-[820px] 2xl:-bottom-[100px]"
-             height="349" src="img/polaroids.png"
-             width="306">
+
+        <picture>
+            <source srcset="img/polaroids.webp" width="820" height="938"  media="(min-width: 1280px)">
+            <source srcset="img/polaroids-620w.webp" width="306" height="349" media="(max-width: 768px)">
+            <img alt="polariod images"
+                 class="absolute right-0 bottom-0 sm:w-[400px] md:w-[513px] xl:w-[620px] 2xl:w-[820px] 2xl:-bottom-[100px]"
+                 height="349"
+                 src="img/polaroids.webp"
+                 width="306">
+        </picture>
     </section>
 </header>
 
 <main class="font-raleway" id="main">
     <section class="pb-16 sm:pb-24 xl:world-map-bg xl:pb-32">
         <div class="mx-auto px-3 container-1140 sm:px-6 xl:px-0">
-            <h2 class="ml-6 text-7 font-medium text-gray my-8 relative before:content-[''] before:bg-yellow before:absolute before:w-3 before:h-[3px] before:rounded-full before:top-[19px] before:-left-5 sm:text-4xl sm:before:w-9 sm:before:-left-12 sm:ml-12 xl:mx-0 xl:px-0 xl:before sm:max-w-[600px] lg:mb-16">
+            <h2 class="ml-6 text-7 font-medium text-secondary-15 my-8 relative before:content-[''] before:bg-yellow before:absolute before:w-3 before:h-[3px] before:rounded-full before:top-[19px] before:-left-5 sm:text-4xl sm:before:w-9 sm:before:-left-12 sm:ml-12 xl:mx-0 xl:px-0 xl:before sm:max-w-[600px] lg:mb-16">
                 Experience different work enviroments and travel the world!
             </h2>
             <div class="grid grid-cols-2 gap-x-3 gap-y-12 sm:grid-cols-300 sm:gap-x-24">
@@ -539,19 +548,23 @@
 
             <div>
                 <div class="flex items-center justify-center bg-no-repeat bg-waves bg-center-70 min-h-80 sm:min-h-128 sm:bg-right">
-                    <img alt="polaroid photos" class="scale-150 2xl:translate-x-[50%] 2xl:scale-[2]" height="343"
-                         src="img/polaroids-2.png" width="504">
+                    <img alt="polaroid photos"
+                         class="scale-150 2xl:translate-x-[50%] 2xl:scale-[2]" eight="343"
+                         h
+                         src="img/polaroids-2.webp"
+                         width="504">
                 </div>
 
                 <div class="container mx-auto px-3 2xl:mb-[100px]">
-                    <div class="mt-12 flex flex-col items-center text-secondary-20">
+                    <div class="mt-12 flex flex-col items-center text-secondary-15">
                         <h2 class="text-2xl font-bold font-amaranth">
                             Ready for takeoff?
                         </h2>
                         <p class="my-6 text-center max-w-[267px]">
                             Travel the world and exchange your knowledge and expertise!
                         </p>
-                        <a aria-label="sign up if you are ready for traveling the world and exchange your knowledge and expertise" class="btn-lg btn-blue"
+                        <a aria-label="sign up if you are ready for traveling the world and exchange your knowledge and expertise"
+                           class="btn-lg btn-blue"
                            href="#">Sign
                             up!</a>
                         <svg class="mt-12 mb-14" fill="none" height="2" viewBox="0 0 267 2" width="267"
@@ -575,8 +588,11 @@
 
             <div class="sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-1">
                 <article class="experience">
-                    <img alt="First impressions of language and culture in New Caledonia" class="article-img"
-                         src="img/article1-image.png">
+                    <img alt="First impressions of language and culture in New Caledonia"
+                         class="article-img"
+                         height="386"
+                         src="img/article1-image.webp"
+                         width="558">
 
                     <div class="content">
                         <p class="publication-date">Apr 7, 2019</p>
@@ -608,7 +624,11 @@
                 </article>
 
                 <article class="experience">
-                    <img alt="Week 10 Down Under!" class="article-img" src="img/article2-image.png">
+                    <img alt="Week 10 Down Under!"
+                         class="article-img"
+                         height="386"
+                         src="img/article2-image.webp"
+                         width="558">
 
                     <div class="content">
                         <p class="publication-date">Apr 7, 2019</p>
@@ -638,8 +658,11 @@
                 </article>
 
                 <article class="experience">
-                    <img alt="Dream Interpretation Common Symbols And Their Meanings" class="article-img"
-                         src="img/article3-image.png">
+                    <img alt="Dream Interpretation Common Symbols And Their Meanings"
+                         class="article-img"
+                         height="386"
+                         src="img/article3-image.webp"
+                         width="558">
 
                     <div class="content">
                         <p class="publication-date">Apr 7, 2019</p>
@@ -664,7 +687,8 @@
                             </svg>
                             <p>Feb 01, 2019 - Feb 29, 2019</p>
                         </div>
-                        <a aria-label="read more about Dream Interpretation Common Symbols And Their Meanings" class="btn-md"
+                        <a aria-label="read more about Dream Interpretation Common Symbols And Their Meanings"
+                           class="btn-md"
                            href="#">Read more</a>
                     </div>
                 </article>
@@ -679,7 +703,11 @@
 <footer class="text-white bg-secondary-20">
     <div class="py-8 center-x container-1140 xl:justify-between">
         <div class="flex flex-col items-center gap-y-6 xl:items-start">
-            <img alt="logo" class="lg:w-[315px]" src="img/logo.svg">
+            <img alt="logo"
+                 class="lg:w-[315px]"
+                 height="26"
+                 src="img/logo.svg"
+                 width="190">
             <div class="flex flex-col items-center gap-y-6 lg:flex-row">
                 <p class="text-center text-sm max-w-[336px] lg:max-w-[267px] lg:text-start">
                     Knowledge and expertise exchange initiative by Inchoo and Interaciv4.

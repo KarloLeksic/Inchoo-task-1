@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -1278,7 +1278,7 @@ article hr{
   line-height: 1.5rem;
 }
 
-.text-gray{
+.text-secondary-15{
   --tw-text-opacity: 1;
   color: rgb(75 84 92 / var(--tw-text-opacity));
 }

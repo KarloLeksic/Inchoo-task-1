@@ -8,10 +8,10 @@ module.exports = {
                 secondary: {
                     0: "#CCCCCC",
                     10: "#BABABA",
+                    15: "#4B545C",
                     20: "#333333",
                 },
                 tertiary: "#FB0",
-                gray: "#4B545C",
                 link: "#09A8D6",
                 yellow: "#FFBC00"
             },
@@ -30,8 +30,6 @@ module.exports = {
                 'city': "url('img/bg-city.svg')",
             },
             backgroundSize: {
-                350: "350%",
-                220: "220%",
                 s: "1320px 520px",
                 m: "2131px 857px",
             },
