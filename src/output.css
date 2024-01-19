@@ -458,7 +458,7 @@ body.nav-open {
 .overlay.active {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: -20px;
   left: 0;
   right: 0;
   opacity: 0.75;
@@ -478,14 +478,14 @@ body.nav-open {
 
 .city-bg {
   background: linear-gradient(to bottom, transparent 0, transparent 290px, #F4F5F5 290px 100%),
-                    url('img/bg-city.svg');
+        url('img/bg-city.svg');
   background-size: 100%, 720px 290px;
 }
 
 @media only screen and (min-width: 640px) {
   .city-bg {
     background: linear-gradient(to bottom, transparent 0, transparent 772px, #F4F5F5 772px 100%),
-                        url('img/bg-city.svg');
+            url('img/bg-city.svg');
     background-size: 100%, 1920px 772px;
     background-position: center, 40% 0%;
   }
@@ -499,6 +499,20 @@ body.nav-open {
   #hero-gradient {
     background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.50) 51.56%, rgba(255, 255, 255, 0.00) 100%);
   }
+}
+
+.swiper {
+  width: 336px;
+  height: 475px;
+  --swiper-pagination-color: #FB0;
+  --swiper-pagination-bullet-width: 40px;
+  --swiper-pagination-bullet-height: 3px;
+  --swiper-pagination-bullet-border-radius: 10px;
+}
+
+.swiper .swiper-wrapper {
+  width: 100%;
+  height: 404px;
 }
 
 *, ::before, ::after{
@@ -697,11 +711,6 @@ body.nav-open {
   margin-bottom: 2rem;
 }
 
-.my-9{
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -868,10 +877,6 @@ body.nav-open {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1015,8 +1020,8 @@ body.nav-open {
   background-repeat: no-repeat;
 }
 
-.p-4{
-  padding: 1rem;
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-12{
@@ -1221,11 +1226,11 @@ body.nav-open {
 @media (min-width: 1280px){
   .xl\:world-map-bg {
     background: url('img/plane.svg'),
-                    url('img/track.svg'),
-                    url('img/world-map.svg');
+        url('img/track.svg'),
+        url('img/world-map.svg');
     background-position: right 370px top 220px,
-                             center right,
-                             center right;
+        center right,
+        center right;
     background-repeat: no-repeat;
   }
 }
@@ -1398,16 +1403,8 @@ body.nav-open {
     margin-top: 3rem;
   }
 
-  .sm\:block{
-    display: block;
-  }
-
   .sm\:grid{
     display: grid;
-  }
-
-  .sm\:hidden{
-    display: none;
   }
 
   .sm\:h-9{
