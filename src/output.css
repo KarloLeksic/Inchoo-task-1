@@ -1602,12 +1602,20 @@ body.nav-open {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .lg\:gap-20{
+    gap: 5rem;
+  }
+
   .lg\:gap-6{
     gap: 1.5rem;
   }
 
   .lg\:gap-9{
     gap: 2.25rem;
+  }
+
+  .lg\:gap-16{
+    gap: 4rem;
   }
 
   .lg\:rounded-full{
