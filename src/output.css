@@ -1416,6 +1416,14 @@ body.nav-open {
     margin-top: 3rem;
   }
 
+  .sm\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .sm\:mt-4{
+    margin-top: 1rem;
+  }
+
   .sm\:grid{
     display: grid;
   }
@@ -1602,8 +1610,8 @@ body.nav-open {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .lg\:gap-20{
-    gap: 5rem;
+  .lg\:gap-16{
+    gap: 4rem;
   }
 
   .lg\:gap-6{
@@ -1612,10 +1620,6 @@ body.nav-open {
 
   .lg\:gap-9{
     gap: 2.25rem;
-  }
-
-  .lg\:gap-16{
-    gap: 4rem;
   }
 
   .lg\:rounded-full{

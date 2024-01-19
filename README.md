@@ -1,0 +1,1 @@
+[Link to the page](https://karloleksic.github.io/Inchoo-task-1/src/index.html)
