@@ -46,7 +46,7 @@ module.exports = {
                 128: "32rem",
             },
             backgroundPosition: {
-                'center-70': "50% 70%",
+                'center-85': "50% 85%",
                 'center-top': "center top",
             },
             gridTemplateColumns: {

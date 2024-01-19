@@ -27,6 +27,7 @@ closeMenuBtn.addEventListener('click', () => {
 // Swiper for companies in the initiative
 const swiper = new Swiper('.swiper', {
     loop: true,
+    spaceBetween: 24,
 
     pagination: {
         el: '.swiper-pagination',
@@ -35,7 +36,7 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
         768: {
             slidesPerView: 2,
-            spaceBetween: 24,
+
 
             grid: {
                 fill: 'row',
