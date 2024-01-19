@@ -6,35 +6,41 @@ const overlay = document.querySelector('#overlay');
 
 // Open mobile menu
 openMenuBtn.addEventListener('click', () => {
+    // Show mobile menu
     mobileMenuEl.classList.add('shown');
+
+    // Disable scroll
     bodyEl.classList.add('nav-open');
+
+    // Add overlay
     overlay.classList.add('active');
 
 });
 
+// Close mobile menu
 closeMenuBtn.addEventListener('click', () => {
     mobileMenuEl.classList.remove('shown');
     bodyEl.classList.remove('nav-open');
     overlay.classList.remove('active');
 });
 
+// Swiper for companies in the initiative
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
 
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+            grid: {
+                fill: 'row',
+                rows: 2,
+            },
+        }
+    }
 });

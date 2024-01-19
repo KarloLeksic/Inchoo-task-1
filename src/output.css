@@ -482,6 +482,13 @@ body.nav-open {
   background-size: 100%, 720px 290px;
 }
 
+.swiper {
+  --swiper-pagination-color: #FB0;
+  --swiper-pagination-bullet-width: 40px;
+  --swiper-pagination-bullet-height: 3px;
+  --swiper-pagination-bullet-border-radius: 10px;
+}
+
 @media only screen and (min-width: 640px) {
   .city-bg {
     background: linear-gradient(to bottom, transparent 0, transparent 772px, #F4F5F5 772px 100%),
@@ -495,24 +502,16 @@ body.nav-open {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  div.swiper {
+    margin-left: 0;
+  }
+}
+
 @media only screen and (min-width: 1140px) {
   #hero-gradient {
     background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.50) 51.56%, rgba(255, 255, 255, 0.00) 100%);
   }
-}
-
-.swiper {
-  width: 336px;
-  height: 475px;
-  --swiper-pagination-color: #FB0;
-  --swiper-pagination-bullet-width: 40px;
-  --swiper-pagination-bullet-height: 3px;
-  --swiper-pagination-bullet-border-radius: 10px;
-}
-
-.swiper .swiper-wrapper {
-  width: 100%;
-  height: 404px;
 }
 
 *, ::before, ::after{
@@ -823,6 +822,14 @@ body.nav-open {
   min-height: 20rem;
 }
 
+.min-h-\[404px\]{
+  min-height: 404px;
+}
+
+.min-h-\[475px\]{
+  min-height: 475px;
+}
+
 .w-0{
   width: 0px;
 }
@@ -837,6 +844,10 @@ body.nav-open {
 
 .w-\[222px\]{
   width: 222px;
+}
+
+.w-\[336px\]{
+  width: 336px;
 }
 
 .w-full{
@@ -1542,8 +1553,20 @@ body.nav-open {
     margin-bottom: 440px;
   }
 
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:w-\[513px\]{
     width: 513px;
+  }
+
+  .md\:w-\[720px\]{
+    width: 720px;
   }
 }
 
