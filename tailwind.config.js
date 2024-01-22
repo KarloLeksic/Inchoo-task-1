@@ -16,10 +16,8 @@ module.exports = {
                 yellow: "#FFBC00"
             },
             lineHeight: {
-                12: "3rem"
-            },
-            fontSize: {
-                7: "1.75rem"
+                '10.5': "2.625rem",
+                '12': "3rem",
             },
             borderWidth: {
                 1: "1px"
@@ -52,6 +50,14 @@ module.exports = {
             gridTemplateColumns: {
               300: "repeat(2, minmax(0, 300px))",
               364: "repeat(2, minmax(0, 364px))",
+            },
+            padding: {
+                '2.25': ".5625rem"
+            },
+            margin: {
+                '4.5': "1.125rem",
+                '18': "4.5rem",
+                '30': "7.5rem"
             }
         },
     },

@@ -37,7 +37,6 @@ const swiper = new Swiper('.swiper', {
         768: {
             slidesPerView: 2,
 
-
             grid: {
                 fill: 'row',
                 rows: 2,
