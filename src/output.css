@@ -782,10 +782,6 @@ body.nav-open {
   margin-left: 1.5rem;
 }
 
-.ml-\[-7px\]{
-  margin-left: -7px;
-}
-
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -856,10 +852,6 @@ body.nav-open {
 
 .min-h-\[475px\]{
   min-height: 475px;
-}
-
-.min-h-\[500px\]{
-  min-height: 500px;
 }
 
 .w-0{
@@ -1114,11 +1106,6 @@ body.nav-open {
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-6{
@@ -1452,14 +1439,6 @@ body.nav-open {
     width: 100%;
   }
 
-  .max-lg\:max-w-\[400px\]{
-    max-width: 400px;
-  }
-
-  .max-lg\:max-w-\[420px\]{
-    max-width: 420px;
-  }
-
   .max-lg\:max-w-\[450px\]{
     max-width: 450px;
   }
@@ -1499,13 +1478,9 @@ body.nav-open {
     padding: 0.75rem;
   }
 
-  .max-lg\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .max-lg\:pt-8{
-    padding-top: 2rem;
+  .max-lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .max-lg\:leading-10{
@@ -1560,6 +1535,10 @@ body.nav-open {
 
   .sm\:ml-12{
     margin-left: 3rem;
+  }
+
+  .sm\:ml-\[-7px\]{
+    margin-left: -7px;
   }
 
   .sm\:mt-0{
