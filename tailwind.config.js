@@ -19,6 +19,21 @@ module.exports = {
                 '10.5': "2.625rem",
                 '12': "3rem",
             },
+            fontSize: {
+                'h1': [
+                    '2.125rem',
+                    {
+                        lineHeight: '3rem',
+                        fontWeight: '700',
+                    }
+                ],
+                'h3': [
+                    '1.5rem',
+                    {
+                        lineHeight: '2.25rem'
+                    }
+                ],
+            },
             borderWidth: {
                 1: "1px"
             },
